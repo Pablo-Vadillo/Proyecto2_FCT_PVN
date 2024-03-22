@@ -16,6 +16,14 @@ public class Main {
 		
 		Coche coche = cocheService.crearCoche("Toyota", "Corola");
 		System.out.println(coche);
+		
+		Coche coche2 = cocheService.crearCoche("Ford", "Focus");
+		System.out.println(coche2);
+		
+		System.out.println("Todos los coches: " + cocheService.obtenerTodosLosCoches());
+		
+		cocheService.eliminarCoche("Toyota");
+		System.out.println("Tras eliminar vehiculos restantes:" + cocheService.obtenerTodosLosCoches());
 	}
 
 }
